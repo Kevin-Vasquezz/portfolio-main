@@ -75,6 +75,10 @@
                   rel="noopener noreferrer" aria-label="GitHub de Kevin Vasquez">
                   <i class="fa-brands fa-square-github mx-2"></i>
                 </a>
+                <a class="social-link" href="https://wa.me/50361347103" target="_blank"
+                  rel="noopener noreferrer" aria-label="WhatsApp de Kevin Vasquez">
+                  <i class="fa-brands fa-whatsapp mx-2"></i>
+                </a>
               </div>
               <div class="col-12 col-lg-5">
                 <img src="img/foto-perfil.jpg" class="card-img" width="250" height="250" alt="Foto de perfil de Kevin Vasquez">
@@ -90,113 +94,306 @@
     <div class="container d-grid gap-5">
 
       <!-- Proyectos -->
-      <div class="row justify-content-center align-self-center text-center gap-5 mt-5" id="proyectos">
+      <div class="row justify-content-center align-self-center text-center gap-4 mt-5 proyectos-seccion" id="proyectos">
         <div class="text-center">
           <h3>Mis proyectos</h3>
+          <p class="proyectos-descripcion">Sitios web developed para marcas y negocios reales, con diseño responsive, animaciones y optimización SEO.</p>
         </div>
-        <div class="row justify-content-center align-self-center text-center gap-5">
-          <div class="col-11 col-md-5 col-lg-5 d-flex">
-            <div class="card-proyectos card tarjetas mx-auto">
-              <!-- Carousel -->
-              <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/cofeeDev.webp" class="d-block w-100 carousel-img" alt="CofeeDev, vista inicial" loading="lazy">
+        <!-- Proyectos de cliente -->
+        <div class="row justify-content-center align-self-center text-center w-100">
+            <div class="col-12 col-md-6 col-xl-3 d-flex">
+              <div class="card-proyectos card tarjetas mx-auto w-100">
+                <!-- Carousel -->
+                <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/infla1.webp" class="d-block w-100 carousel-img" alt="Infla Eventos, sección de servicios" loading="lazy" width="1440" height="900">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/infla2.webp" class="d-block w-100 carousel-img" alt="Infla Eventos, catálogo de paquetes" loading="lazy" width="1440" height="900">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/infla3.webp" class="d-block w-100 carousel-img" alt="Infla Eventos, galería de decoraciones" loading="lazy" width="1440" height="900">
+                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="img/cofeeDev2.webp" class="d-block w-100 carousel-img" alt="CofeeDev, vista de productos" loading="lazy">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/cofeeDev3.webp" class="d-block w-100 carousel-img" alt="CofeeDev, sección de contacto" loading="lazy">
-                  </div>
+                  <!-- Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-                <!-- Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">CofeeDev</h5>
-                <p class="card-text">Pagina con diseño elegante y minimalista, en este proyecto utilice HTML, Bootstrap y JavaScript.</p>
-                <a href="https://github.com/Kevin-Vasquezz/Bootstrap-project" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver código</a>
+                <div class="card-body">
+                  <h5 class="card-title">Infla Eventos</h5>
+                  <p class="card-text">Sitio para un estudio de decoración con globos en El Salvador. Landing de una sola página con animaciones al hacer scroll, catálogo de paquetes con pestañas, galería y formulario de cotización.</p>
+                  <ul class="tech-list">
+                    <li class="tech-item">HTML5</li>
+                    <li class="tech-item">Tailwind CSS</li>
+                    <li class="tech-item">JavaScript</li>
+                    <li class="tech-item">AOS</li>
+                    <li class="tech-item">Lucide</li>
+                    <li class="tech-item">FontAwesome</li>
+                    <li class="tech-item">Schema.org</li>
+                    <li class="tech-item">Open Graph</li>
+                  </ul>
+                  <a href="https://kevin-vasquezz.github.io/InflaEventosBeta/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visitar sitio</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-11 col-md-5 col-lg-5 d-flex">
-            <div class="card-proyectos card tarjetas mx-auto">
-              <!-- Carousel -->
-              <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/Airbnb1.webp" class="d-block w-100 carousel-img" alt="Airbnb clon, página principal" loading="lazy">
+            <div class="col-12 col-md-6 col-xl-3 d-flex">
+              <div class="card-proyectos card tarjetas mx-auto w-100">
+                <!-- Carousel -->
+                <div id="carousel5" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/nexus1.webp" class="d-block w-100 carousel-img" alt="Nexus AIO, portada" loading="lazy" width="1440" height="900">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/nexus2.webp" class="d-block w-100 carousel-img" alt="Nexus AIO, módulos del sistema" loading="lazy" width="1440" height="900">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/nexus3.webp" class="d-block w-100 carousel-img" alt="Nexus AIO, comparativa" loading="lazy" width="1440" height="900">
+                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="img/Airbnb2.webp" class="d-block w-100 carousel-img" alt="Airbnb clon, resultados de búsqueda" loading="lazy">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Airbnb3.webp" class="d-block w-100 carousel-img" alt="Airbnb clon, detalle de publicación" loading="lazy">
-                  </div>
+                  <!-- Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel5"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel5"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-                <!-- Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Airbnb clon</h5>
-                <p class="card-text">Clon de Airbnb en el cual utilice HTML, Tailwind y JavaScript</p>
-                <a href="https://github.com/Kevin-Vasquezz/tailwind-project" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver código</a>
+                <div class="card-body">
+                  <h5 class="card-title">Nexus AIO</h5>
+                  <p class="card-text">Plataforma que unifica ERP, recursos humanos y facturación electrónica en un solo sistema. Incluye módulos por dominio, comparativa de productos, calculadora y carrusel de módulos.</p>
+                  <ul class="tech-list">
+                    <li class="tech-item">HTML5</li>
+                    <li class="tech-item">Tailwind CSS</li>
+                    <li class="tech-item">JavaScript</li>
+                    <li class="tech-item">SVG</li>
+                    <li class="tech-item">Google Fonts</li>
+                  </ul>
+                  <a href="https://kevin-vasquezz.github.io/NexusAIOBeta/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visitar sitio</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-11 col-md-5 col-lg-5 d-flex">
-            <div class="card-proyectos card tarjetas mx-auto">
-              <!-- Carousel -->
-              <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/gaming1.webp" class="d-block w-100 carousel-img" alt="World Gaming, portada de noticias" loading="lazy">
+            <div class="col-12 col-md-6 col-xl-3 d-flex">
+              <div class="card-proyectos card tarjetas mx-auto w-100">
+                <!-- Carousel -->
+                <div id="carousel7" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/smoke1.webp" class="d-block w-100 carousel-img" alt="Smoke Lover's, proceso de cocción" loading="lazy" width="1440" height="900">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/smoke2.webp" class="d-block w-100 carousel-img" alt="Smoke Lover's, carta" loading="lazy" width="1440" height="900">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/smoke3.webp" class="d-block w-100 carousel-img" alt="Smoke Lover's, zonas de reparto" loading="lazy" width="1440" height="900">
+                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="img/gaming2.webp" class="d-block w-100 carousel-img" alt="World Gaming, detalle de artículo" loading="lazy">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/gaming3.webp" class="d-block w-100 carousel-img" alt="World Gaming, listado de juegos" loading="lazy">
-                  </div>
+                  <!-- Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel7"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel7"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-                <!-- Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">world gaming</h5>
-                <p class="card-text">Sitio web con las ultimas noticias del mundo gaming, en este proyecto pude emplear tecnologias como HTML, Sass y JavaScript.</p>
-                <a href="https://github.com/Kevin-Vasquezz/sass-project" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver código</a>
+                <div class="card-body">
+                  <h5 class="card-title">Smoke Lover's</h5>
+                  <p class="card-text">Sitio para una dark kitchen de BBQ premium en El Salvador. Página de una sola hoja con carta, proceso de cocción lenta, zonas de reparto y contacto directo por WhatsApp.</p>
+                  <ul class="tech-list">
+                    <li class="tech-item">HTML5</li>
+                    <li class="tech-item">CSS3</li>
+                    <li class="tech-item">JavaScript</li>
+                    <li class="tech-item">SVG</li>
+                    <li class="tech-item">Google Fonts</li>
+                  </ul>
+                  <a href="https://kevin-vasquezz.github.io/SmokeLoversBeta/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visitar sitio</a>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="col-12 col-md-6 col-xl-3 d-flex">
+              <div class="card-proyectos card tarjetas mx-auto w-100">
+                <!-- Carousel -->
+                <div id="carousel9" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/arpe1.webp" class="d-block w-100 carousel-img" alt="Grupo ARPE, portada" loading="lazy" width="1440" height="900">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/arpe2.webp" class="d-block w-100 carousel-img" alt="Grupo ARPE, divisiones" loading="lazy" width="1440" height="900">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/arpe3.webp" class="d-block w-100 carousel-img" alt="Grupo ARPE, valores corporativos" loading="lazy" width="1440" height="900">
+                    </div>
+                  </div>
+                  <!-- Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel9"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel9"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Grupo ARPE</h5>
+                  <p class="card-text">Sitio corporativo de un holding empresarial en El Salvador. Presenta las divisiones del grupo, su modelo operativo y propuesta de valor, con carrusel propio y navegación móvil.</p>
+                  <ul class="tech-list">
+                    <li class="tech-item">HTML5</li>
+                    <li class="tech-item">Tailwind CSS</li>
+                    <li class="tech-item">JavaScript</li>
+                    <li class="tech-item">FontAwesome</li>
+                  </ul>
+                  <a href="https://kevin-vasquezz.github.io/GrupoArpeBeta/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visitar sitio</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="text-center proyecto-subtitulo">
+          <h4>Prácticas de formación</h4>
+          <p>Maquetaciones y ejercicios de desarrollo web realizados durante mi aprendizaje.</p>
+        </div>
+        <!-- Prácticas y ejercicios -->
+        <div class="row justify-content-center align-self-center text-center w-100">
+            <div class="col-12 col-md-6 col-xl-3 d-flex">
+              <div class="card-proyectos card tarjetas mx-auto w-100">
+                <!-- Carousel -->
+                <div id="carousel6" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/cofeeDev.webp" class="d-block w-100 carousel-img" alt="CofeeDev, vista inicial" loading="lazy" width="1440" height="900">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/cofeeDev2.webp" class="d-block w-100 carousel-img" alt="CofeeDev, vista de productos" loading="lazy" width="1440" height="900">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/cofeeDev3.webp" class="d-block w-100 carousel-img" alt="CofeeDev, sección de contacto" loading="lazy" width="1440" height="900">
+                    </div>
+                  </div>
+                  <!-- Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel6"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel6"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">CofeeDev</h5>
+                  <p class="card-text">Página de cafetería con diseño elegante y minimalista.Maquetación responsive con grid y componentes de Bootstrap, más un carrusel de productos.</p>
+                  <ul class="tech-list">
+                    <li class="tech-item">HTML5</li>
+                    <li class="tech-item">Bootstrap 5</li>
+                    <li class="tech-item">JavaScript</li>
+                    <li class="tech-item">FontAwesome</li>
+                  </ul>
+                  <a href="https://kevin-vasquezz.github.io/Bootstrap-project-main/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visitar sitio</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 d-flex">
+              <div class="card-proyectos card tarjetas mx-auto w-100">
+                <!-- Carousel -->
+                <div id="carousel8" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/Airbnb1.webp" class="d-block w-100 carousel-img" alt="Airbnb clon, página principal" loading="lazy" width="1440" height="900">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Airbnb2.webp" class="d-block w-100 carousel-img" alt="Airbnb clon, resultados de búsqueda" loading="lazy" width="1440" height="900">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Airbnb3.webp" class="d-block w-100 carousel-img" alt="Airbnb clon, detalle de publicación" loading="lazy" width="1440" height="900">
+                    </div>
+                  </div>
+                  <!-- Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel8"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel8"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Airbnb clon</h5>
+                  <p class="card-text">Réplica de la interfaz de Airbnb: barra de búsqueda, filtros, tarjetas de alojamiento y ficha de publicación, construida con utilidades de Tailwind.</p>
+                  <ul class="tech-list">
+                    <li class="tech-item">HTML5</li>
+                    <li class="tech-item">Tailwind CSS</li>
+                    <li class="tech-item">JavaScript</li>
+                    <li class="tech-item">FontAwesome</li>
+                  </ul>
+                  <a href="https://kevin-vasquezz.github.io/tailwind-project-main/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visitar sitio</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 d-flex">
+              <div class="card-proyectos card tarjetas mx-auto w-100">
+                <!-- Carousel -->
+                <div id="carousel10" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/gaming1.webp" class="d-block w-100 carousel-img" alt="World Gaming, portada de noticias" loading="lazy" width="1440" height="900">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/gaming2.webp" class="d-block w-100 carousel-img" alt="World Gaming, detalle de artículo" loading="lazy" width="1440" height="900">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/gaming3.webp" class="d-block w-100 carousel-img" alt="World Gaming, listado de juegos" loading="lazy" width="1440" height="900">
+                    </div>
+                  </div>
+                  <!-- Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel10"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel10"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">World Gaming</h5>
+                  <p class="card-text">Portal de noticias del mundo gaming con listado de artículos, ficha de noticia y sección de juegos destacados. Estilos escritos con Sass y organised en partials.</p>
+                  <ul class="tech-list">
+                    <li class="tech-item">HTML5</li>
+                    <li class="tech-item">Sass</li>
+                    <li class="tech-item">JavaScript</li>
+                    <li class="tech-item">CSS3</li>
+                  </ul>
+                  <a href="https://kevin-vasquezz.github.io/sass-project-main/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visitar sitio</a>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
 
@@ -268,6 +465,10 @@
           <a class="btn btn-primary" href="https://github.com/Kevin-Vasquezz" target="_blank"
             rel="noopener noreferrer">
             <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a class="btn btn-primary" href="https://wa.me/50361347103" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
           </a>
         </div>
       </div>

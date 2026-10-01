@@ -78,6 +78,14 @@ body {
   transform: translateY(-3px);
 }
 
+#card-personal .fa-whatsapp {
+  color: #fff;
+}
+
+#card-personal .social-link:hover .fa-whatsapp {
+  color: blueviolet;
+}
+
 .card-proyectos {
   border-color: blueviolet;
   background-color: #000;
@@ -103,6 +111,8 @@ body {
   background-color: #3700b3;
 }
 
+
+
 .img-portada {
     width: 100%; /* Para que la imagen ocupe el ancho completo de la card */
     height: 200px; /* Ajusta la altura según lo que necesites */
@@ -118,6 +128,67 @@ body {
 .carousel-img {
   height: 300px; /* Altura fija para todas las imágenes */
   object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+/* seccion de proyectos: ocupa el 90% del ancho de la pantalla, independiente del .container */
+.proyectos-seccion {
+  width: 90vw;
+  margin-left: calc(50% - 45vw);
+  margin-right: calc(50% - 45vw);
+}
+
+/* seccion de proyectos: dos filas, 4 + 3 tarjetas */
+.proyectos-descripcion {
+  color: #b9b9b9;
+  font-size: 0.95rem;
+  margin: 0.5rem auto 0 auto;
+  max-width: 620px;
+}
+
+.proyectos-seccion .tarjetas {
+  width: 100%;
+}
+
+/* separacion vertical entre la fila de 4 y el subtitulo */
+.proyecto-subtitulo {
+  margin-top: 2.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.proyecto-subtitulo h4 {
+  color: #d8c4ff;
+}
+
+.proyecto-subtitulo p {
+  color: #8f8f8f;
+  font-size: 0.88rem;
+  margin: 0.35rem 0 0 0;
+}
+
+/* etiquetas de tecnologias en las tarjetas de proyecto */
+.tech-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  justify-content: center;
+}
+
+.tech-item {
+  background-color: rgba(138, 43, 226, 0.16);
+  border: 1px solid rgba(138, 43, 226, 0.55);
+  border-radius: 999px;
+  color: #d8c4ff;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  padding: 0.15rem 0.6rem;
+  white-space: nowrap;
+}
+
+.card-proyectos .card-text {
+  font-size: 0.95rem;
 }
 
 /* about */
