@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+}
+
+html {
+  background-color: #000;
+}
+
+body {
+  background-color: transparent;
+}
+
+#particles-js {
+  background: black;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+#principal {
+  color: white;
+}
+
+#nav {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 18px rgba(138, 43, 226, 0.55);
+}
+
+#nav a {
+  color: #fff;
+}
+
+#nav a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+#about,
+#proyectos,
+#skills,
+#contacto {
+  scroll-margin-top: 80px;
+}
+
+.about-hero {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.subTitulo {
+  color: blueviolet;
+}
+
+#card-personal {
+  border-color: blueviolet;
+  background-color: #000;
+}
+
+#card-personal img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+#card-personal .social-link {
+  color: #fff;
+  font-size: 1.75rem;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#card-personal .social-link:hover {
+  color: blueviolet;
+  transform: translateY(-3px);
+}
+
+.card-proyectos {
+  border-color: blueviolet;
+  background-color: #000;
+  color: #fff;
+}
+
+.card-proyectos .card-title {
+  color: #fff;
+  font-weight: 700;
+}
+
+.card-proyectos .card-text {
+  color: #fff;
+}
+
+.card-proyectos a {
+  background-color: #6200ea;
+  border: none;
+  color: #fff;
+}
+
+.card-proyectos a:hover {
+  background-color: #3700b3;
+}
+
+.img-portada {
+    width: 100%; /* Para que la imagen ocupe el ancho completo de la card */
+    height: 200px; /* Ajusta la altura según lo que necesites */
+    object-fit: cover; /* Mantiene la proporción de la imagen y la recorta para llenar el área */
+  }
+
+.tarjetas:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 0px 15px 5px blueviolet;
+}
+
+.carousel-img {
+  height: 300px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+/* about */
+
+/* SKILLS */
+.skills-intro {
+  max-width: 640px;
+  margin: 12px auto 0;
+  color: #d4d4d4;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.skill-group {
+  text-align: left;
+  padding: 20px;
+  border: 1px solid blueviolet;
+  border-radius: 12px;
+  background-color: #000;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-group:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 15px 5px rgba(138, 43, 226, 0.35);
+}
+
+.skill-group-title {
+  color: blueviolet;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.skill-list i {
+  width: 22px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* END SKILLS */
+
+/* contacto */
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.contact-links .btn-primary {
+  background-color: #6200ea;
+  border: none;
+  padding: 10px 24px;
+}
+
+.contact-links .btn-primary:hover,
+.contact-links .btn-primary:focus {
+  background-color: #3700b3;
+  color: #fff;
+}

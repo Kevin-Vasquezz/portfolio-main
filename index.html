@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- link css personalizado (despues de Bootstrap para que las reglas propias ganen) -->
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+<body>
+  <!-- div principal -->
+  <main id="principal">
+    <!-- Navbar  -->
+    <nav id="nav" class="navbar navbar-dark fixed-top navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Kevin Dev</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- about -->
+    <div class="container d-flex justify-content-center align-items-center about-hero" id="about">
+      <div class="content d-flex justify-content-center text-center w-100">
+
+        <!-- card Dev -->
+        <div id="card-personal" class="card mt-5 ">
+          <div class="card-body justify-content-center">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-7">
+                <h5 class="card-title">¡Hola! soy Kevin</h5>
+                <h6 class="card-subtitle mb-2 subTitulo fw-bold">Jr Full Stack Developer</h6>
+                <p>
+                  Apasionado y enfocado en Desarrollo de software con habilidades blandas excepcionales y un sólido
+                  conocimiento en tecnología.
+                </p>
+                <a class="social-link" href="https://www.linkedin.com/in/kevin-vasquez-65570417b/"
+                  target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Kevin Vasquez">
+                  <i class="fa-brands fa-linkedin mx-2"></i>
+                </a>
+                <a class="social-link" href="https://github.com/Kevin-Vasquezz" target="_blank"
+                  rel="noopener noreferrer" aria-label="GitHub de Kevin Vasquez">
+                  <i class="fa-brands fa-square-github mx-2"></i>
+                </a>
+              </div>
+              <div class="col-12 col-lg-5">
+                <img src="img/foto-perfil.jpg" class="card-img" width="250" height="250" alt="Foto de perfil de Kevin Vasquez">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- hero -->
+    <div class="container d-grid gap-5">
+
+      <!-- Proyectos -->
+      <div class="row justify-content-center align-self-center text-center gap-5 mt-5" id="proyectos">
+        <div class="text-center">
+          <h3>Mis proyectos</h3>
+        </div>
+        <div class="row justify-content-center align-self-center text-center gap-5">
+          <div class="col-11 col-md-5 col-lg-5 d-flex">
+            <div class="card-proyectos card tarjetas mx-auto">
+              <!-- Carousel -->
+              <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/cofeeDev.webp" class="d-block w-100 carousel-img" alt="CofeeDev, vista inicial" loading="lazy">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cofeeDev2.webp" class="d-block w-100 carousel-img" alt="CofeeDev, vista de productos" loading="lazy">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cofeeDev3.webp" class="d-block w-100 carousel-img" alt="CofeeDev, sección de contacto" loading="lazy">
+                  </div>
+                </div>
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">CofeeDev</h5>
+                <p class="card-text">Pagina con diseño elegante y minimalista, en este proyecto utilice HTML, Bootstrap y JavaScript.</p>
+                <a href="https://github.com/Kevin-Vasquezz/Bootstrap-project" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver código</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-11 col-md-5 col-lg-5 d-flex">
+            <div class="card-proyectos card tarjetas mx-auto">
+              <!-- Carousel -->
+              <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/Airbnb1.webp" class="d-block w-100 carousel-img" alt="Airbnb clon, página principal" loading="lazy">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Airbnb2.webp" class="d-block w-100 carousel-img" alt="Airbnb clon, resultados de búsqueda" loading="lazy">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Airbnb3.webp" class="d-block w-100 carousel-img" alt="Airbnb clon, detalle de publicación" loading="lazy">
+                  </div>
+                </div>
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Airbnb clon</h5>
+                <p class="card-text">Clon de Airbnb en el cual utilice HTML, Tailwind y JavaScript</p>
+                <a href="https://github.com/Kevin-Vasquezz/tailwind-project" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver código</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-11 col-md-5 col-lg-5 d-flex">
+            <div class="card-proyectos card tarjetas mx-auto">
+              <!-- Carousel -->
+              <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/gaming1.webp" class="d-block w-100 carousel-img" alt="World Gaming, portada de noticias" loading="lazy">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/gaming2.webp" class="d-block w-100 carousel-img" alt="World Gaming, detalle de artículo" loading="lazy">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/gaming3.webp" class="d-block w-100 carousel-img" alt="World Gaming, listado de juegos" loading="lazy">
+                  </div>
+                </div>
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">world gaming</h5>
+                <p class="card-text">Sitio web con las ultimas noticias del mundo gaming, en este proyecto pude emplear tecnologias como HTML, Sass y JavaScript.</p>
+                <a href="https://github.com/Kevin-Vasquezz/sass-project" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver código</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="row justify-content-center align-self-center text-center gap-5 mt-5" id="skills">
+        <div class="text-center">
+          <h3>Skills</h3>
+          <p class="skills-intro">Así distribuyo mi trabajo en el día a día: me apoyo sobre todo en Laravel y Vue, y dedico buena parte del tiempo a servidor y base de datos.</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-group">
+            <h6 class="skill-group-title">Frontend</h6>
+            <ul class="skill-list">
+              <li><i class="fa-brands fa-html5"></i> HTML</li>
+              <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+              <li><i class="fa-brands fa-js"></i> JavaScript</li>
+              <li><i class="fa-solid fa-file-code"></i> Blade</li>
+              <li><i class="fa-brands fa-vuejs"></i> Vue</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h6 class="skill-group-title">UI &amp; Frameworks</h6>
+            <ul class="skill-list">
+              <li><i class="fa-brands fa-bootstrap"></i> Bootstrap</li>
+              <li><i class="fa-solid fa-wind"></i> Tailwind CSS</li>
+              <li><i class="fa-brands fa-sass"></i> Sass</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h6 class="skill-group-title">Backend</h6>
+            <ul class="skill-list">
+              <li><i class="fa-brands fa-laravel"></i> Laravel</li>
+              <li><i class="fa-brands fa-php"></i> PHP</li>
+              <li><i class="fa-brands fa-java"></i> Java</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h6 class="skill-group-title">Bases de datos</h6>
+            <ul class="skill-list">
+              <li><i class="fa-solid fa-database"></i> SQL</li>
+              <li><i class="fa-solid fa-table"></i> phpMyAdmin</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h6 class="skill-group-title">DevOps &amp; Herramientas</h6>
+            <ul class="skill-list">
+              <li><i class="fa-brands fa-git-alt"></i> Git</li>
+              <li><i class="fa-solid fa-terminal"></i> Ubuntu / Terminal</li>
+              <li><i class="fa-solid fa-rocket"></i> Deploy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contacto -->
+      <div class="row justify-content-center align-items-center text-center mx-1" id="contacto">
+        <div class="text-center">
+          <h3>Contacto</h3>
+        </div>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/kevin-vasquez-65570417b/"
+            target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a class="btn btn-primary" href="https://github.com/Kevin-Vasquezz" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+      <div class="mt-5"></div>
+    </div>
+  </main>
+
+  <div id="particles-js"></div>
+
+
+  <!-- añadiendo scripts de particle.js -->
+  <script src="particles.min.js"></script>
+  <script>
+    particlesJS({
+      "particles": {
+        "number": {
+          "value": 100,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        "opacity": {
+          "value": 1,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 1,
+            "opacity_min": 0,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 2,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 4,
+            "size_min": 0.3,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": false,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 0.5,
+          "direction": "top",
+          "random": true,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 600
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": "bubble"
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "repulse"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 250,
+            "size": 0,
+            "duration": 2,
+            "opacity": 0,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 400,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <!-- script navbar -->
+  <!-- <script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add(style="backdrop-filter: blur(12px);"); 
+      } else {
+        nav.classList.remove(style="backdrop-filter: blur(12px);");
+      }
+    });
+  </script> -->
+
+</body>
+
+</html>
